@@ -165,6 +165,8 @@ Pemilihan data berdasarkan dari pengetahuan saya mengenai analisa kredit. Dapat 
 
 ### Exploratory Data Analysis
 Pada bagian ini dilakukan beberapa analisa data. Yang pertama dilakukan adalah mengamati kolom target prediksi yang memiliki jumlah sebagai berikut:
+| Loan Status      			| Count                                                            |
+|---------------------------|------------------------------------------------------------------------|
 Current                                             |   601779|
 Fully Paid                                          |   207723|
 Charged Off                                         |   45248|
@@ -209,30 +211,30 @@ Untuk modelling, akan digunakan metode Logistic Regression. Dasar pemilihan meto
     <img src="images/logreg_test.png" alt="Test" width="800" height="800">
   </a>
 
-classification report Logistic Regression Train Set
-              precision    recall  f1-score   support
+**Classification Report Logistic Regression Train Set**
 
-         1.0       0.66      0.68      0.67    655960
-         2.0       0.59      0.63      0.61    655960
-         3.0       0.84      0.77      0.80    655960
+|          | Precision | Recall | F1-Score | Support |
+|----------|-----------|--------|----------|---------|
+| 1.0      | 0.66      | 0.68   | 0.67     | 655960  |
+| 2.0      | 0.59      | 0.63   | 0.61     | 655960  |
+| 3.0      | 0.84      | 0.77   | 0.80     | 655960  |
+| Accuracy |           |        | 0.69     | 1967880 |
+| Macro Avg| 0.70      | 0.69   | 0.69     | 1967880 |
+| Weighted Avg| 0.70   | 0.69   | 0.69     | 1967880 |
 
-    accuracy                           0.69   1967880
-   macro avg       0.70      0.69      0.69   1967880
-weighted avg       0.70      0.69      0.69   1967880
+**Classification Report Logistic Regression Test Set**
 
-                                  
-classification report Logistic Regression Test Set
-              precision    recall  f1-score   support
+|          | Precision | Recall | F1-Score | Support |
+|----------|-----------|--------|----------|---------|
+| 1.0      | 0.98      | 0.68   | 0.80     | 163990  |
+| 2.0      | 0.04      | 0.52   | 0.08     | 4040    |
+| 3.0      | 0.42      | 0.75   | 0.54     | 9446    |
+| Accuracy |           |        | 0.68     | 177476  |
+| Macro Avg| 0.48      | 0.65   | 0.47     | 177476  |
+| Weighted Avg| 0.93   | 0.68   | 0.77     | 177476  |
 
-         1.0       0.98      0.68      0.80    163990
-         2.0       0.04      0.52      0.08      4040
-         3.0       0.42      0.75      0.54      9446
 
-    accuracy                           0.68    177476
-   macro avg       0.48      0.65      0.47    177476
-weighted avg       0.93      0.68      0.77    177476
-
-**Model Evaluation Conclusion**
+### Model Evaluation Conclusion
 
 ---
 
