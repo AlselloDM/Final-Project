@@ -232,6 +232,7 @@ Untuk modelling, akan digunakan metode Logistic Regression. Dasar pemilihan meto
 | Accuracy |           |        | 0.68     | 177476  |
 | Macro Avg| 0.48      | 0.65   | 0.47     | 177476  |
 | Weighted Avg| 0.93   | 0.68   | 0.77     | 177476  |
+</div>
 
 
 ### Model Evaluation Conclusion
