@@ -33,7 +33,7 @@
 <h3 align="center">Credit-Risk-Prediction</h3>
 
   <p align="center">
-    project_description
+    Notebook Final project Hacktiv8 HCK-006 Alsello Diveni Manuputty
     <br />
     <a href="https://github.com/AlselloDM/Final-Project"><strong>Explore the docs »</strong></a>
     <br />
@@ -77,7 +77,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Objective
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -88,17 +88,16 @@ Pada notebook ini akan dilakukan pengerjaan Final Project dimana akan dibuat mod
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Proses Pengerjaan
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Urutan pengerjaannya adalah sebagai berikut
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Beberapa library yang perlu di-install dahulu.
+* pandas
   ```sh
-  npm install npm@latest -g
+  !pip install pandas
   ```
 
 ### Installation
