@@ -51,7 +51,7 @@
 
 [![Kredit][product-screenshot]](https://www.kaggle.com/datasets/ranadeep/credit-risk-dataset)
 
-Pada notebook ini akan dilakukan pengerjaan Final Project dimana akan dibuat model *Classification* untuk memprediksi `status` resiko hutang menggunakan dataset dari [link](https://www.kaggle.com/datasets/ranadeep/credit-risk-dataset) ini. Pada kasus ini, analis ditugaskan untuk membuatkan sebuah model untuk memprediksi dari data yang berisi informasi umum dari *`debitur`*. Karena resiko salah klasifikasi sangat fatal, maka perlu dilakukan *modelling* dengan berusaha untuk meningkatkan *`accuracy`* model. Namun, dari hasil screening awal ternyata proporsi datanya tidak setara. Hal ini akan menjadi masalah nantinya saat pembuatan model. Dengan model ini, diharapkan bank bisa meringankan kerja tim analisis resiko dalam proses screening dan bisa mengarahkan energi yang tersisa ke pekerjaan lain yang memang butuh seorang manusia untuk melakukannya.
+Pada notebook ini akan dilakukan pengerjaan Final Project dimana akan dibuat model *Classification* untuk memprediksi `status` resiko hutang menggunakan dataset dari [link](https://www.kaggle.com/datasets/ranadeep/credit-risk-dataset) ini. Dataset juga bisa diakses [disini](https://drive.google.com/drive/folders/1PuZDfzDjrO12mQtCTQzLqQehtjl3KaaN?usp=sharing).Pada kasus ini, analis ditugaskan untuk membuatkan sebuah model untuk memprediksi dari data yang berisi informasi umum dari *`debitur`*. Karena resiko salah klasifikasi sangat fatal, maka perlu dilakukan *modelling* dengan berusaha untuk meningkatkan *`accuracy`* model. Namun, dari hasil screening awal ternyata proporsi datanya tidak setara. Hal ini akan menjadi masalah nantinya saat pembuatan model. Dengan model ini, diharapkan bank bisa meringankan kerja tim analisis resiko dalam proses screening dan bisa mengarahkan energi yang tersisa ke pekerjaan lain yang memang butuh seorang manusia untuk melakukannya.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +90,7 @@ Beberapa library yang perlu di-install dahulu.
   !pip install feature_engine
   ```
 ### Data Loading
-Setelah sudah di-import, langsung saja akan dilakukan loading data. Pada bagian ini juga akan digunakan serangkaian cara untuk mendapatkan overview data.
+Setelah sudah di-import, langsung saja akan dilakukan loading data. Dataset yang digunakan juga ada [disini](https://drive.google.com/drive/folders/1PuZDfzDjrO12mQtCTQzLqQehtjl3KaaN?usp=sharing).Pada bagian ini juga akan digunakan serangkaian cara untuk mendapatkan overview data.
 Pada bagian ini juga digunakan domain knowledge sebagai filter data karena kolom terdiri dari 2 int, 49 float dan 22 object type features.
 Sampai akhirnya berikut adalah data-data yang dipilih:
 | Column Name      			| Explanation                                                            |
