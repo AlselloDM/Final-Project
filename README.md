@@ -99,27 +99,65 @@ Beberapa library yang perlu di-install dahulu.
   ```sh
   !pip install pandas
   ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
+  * seaborn
+  ```sh
+  !pip install seaborn
+  ```
+  * matplotlib
+  ```sh
+  !pip install matplotlib
+  ```
+  * numpy
+  ```sh
+  !pip install numpy
+  ```
+  * Scikit-learn
+  ```sh
+  !pip install scikit-learn
+  ```
+  * feature-engine
+  ```sh
+  !pip install feature_engine
+  ```
+### Data Loading
+Setelah sudah di-import, langsung saja akan dilakukan loading data. Pada bagian ini juga akan digunakan serangkaian cara untuk mendapatkan overview data.
+Pada bagian ini juga digunakan domain knowledge sebagai filter data karena kolom terdiri dari 2 int, 49 float dan 22 object type features.
+Sampai akhirnya berikut adalah data-data yang dipilih:
+| Column Name      			| Explanation                                                            |
+|---------------------------|------------------------------------------------------------------------|
+| addr_state				| Area domisili bisa memberi pengaruh kepada pembayaran hutang berdasarkan kondisi ekonomi, lapangan pekerjaan, dsb.       |
+| annual_inc       			| Pendapatan debitur adalah faktor penting dalam menilai kemampuan pembayarannya.  |
+| application_type 			| Perbedaan tipe aplikasi seperti individual atau joint memiliki kemungkinan berpengaruh terhadap resiko.     |
+| delinq_2yrs	   			| Jumlah kategori pembayaran 'delinquent' dalam 2 tahun kebelakang bisa menentukan pola kebiasaan membayar debitur.|
+| dti	   					| Rasio Debt-to-Income dapat mengukur kestabilan finansial debitur.													|
+| emp_length	   			| Lama bekerja debitur bisa mengukur kestabilan pekerjaan yang berpengaruh kepada kemampuan membayarnya				|
+| grade	   					| Penggolongan grade adalah penilaian resiko kredit dari kreditur 
+|          					|Grade A: Resiko rendah, diprediksi menguntungkan dan debitur dengan kekuatan finansial yang baik.
+|          					|Grade B: Resiko menengah dengan status kredit yang baik.
+|          					|Grade C: Resiko menengah hingga tinggi dengan beberapa indikator kredit beresiko.
+|          					|Grade D: Resiko tinggi dengan profil kredit yang lebih lemah.
+|          					|Grade E: Resiko tinggi dengan riwayat kredit terbatas atau memiliki indikator kredit beresiko dalam jumlah tinggi.
+|          					|Grade F: Resiko tinggi dengan riwayat kredit yang buruk seperti jumlah hutang yang tinggi, dan pembayaran yang terlambat
+|          					|Grade G: Resiko tertinggi dengan riwayat kredit yang sangat buruk dan masalah kredit lainnya yang lebih berat.
+| home_ownership			| Dapat menggambarkan kestabilan situasi finansial debitur.
+| inq_last_6mths	   		| Menggambarkan aktivitas kredit debitur belakangan ini.
+| int_rate	   				| Dapat berkorelasi dengan tingkat resiko debitur.
+| purpose	   				| Dapat memprediksi komitmen membayar debitur.
+| revol_util	   			| Menunjukan berapa kredit yang tersedia untuk debitur
+| term	   					| Dapat berpengaruh ke kemampuan debitur dalam mengelola pembayaran.
+| total_acc	   				| Jumlah total pinjaman dapat memberikan informasi mengenai riwayat kredit debitur.
+| acc_now_delinq	   		| Jumlah akun yang saat ini menunggak dapat mengindikasikan masalah kredit yang sedang berlangsung.
+| tot_cur_bal	   			| Dapat mencerminkan beban kredit peminjam secara keseluruhan.
+| pub_rec					| Jumlah catatan publik seperti bangkrut, repo, pajak dapat mempengaruhi kelayakan kredit.
+| mths_since_last_delinq	| Dapat menggambarkan kebiasaan membayar debitur belakangan ini.
+| mths_since_last_record	| Dapat menggambarkan resiko kredit
+| total_pymnt	 			| Menggambarkan riwayat pembayaran.
+| open_acc	   				| Dapat mengindikasikan aktivitas kredit debitur.
+| collections_12_mths_ex_med| Dapat menggambarkan masalah kredit belakangan ini.
+| loan_amnt	   				| Mungkin berkorelasi dengan resiko itu sendiri.
+| recoveries	   			| Mungkin berkorelasi dengan kredit macet(Default)
+| verification_status	  	| Dapat mengindikasikan keaslian laporan keuangan debitur.
+| loan_status				| Target Prediksi
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -160,17 +198,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
