@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AlselloDM/Final-Project">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/credit-card.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Credit-Risk-Prediction</h3>
@@ -46,40 +46,10 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## Objective
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Kredit][product-screenshot]](https://www.kaggle.com/datasets/ranadeep/credit-risk-dataset)
 
 Pada notebook ini akan dilakukan pengerjaan Final Project dimana akan dibuat model *Classification* untuk memprediksi `status` resiko hutang menggunakan dataset dari [link](https://www.kaggle.com/datasets/ranadeep/credit-risk-dataset) ini. Pada kasus ini, analis ditugaskan untuk membuatkan sebuah model untuk memprediksi dari data yang berisi informasi umum dari *`debitur`*. Karena resiko salah klasifikasi sangat fatal, maka perlu dilakukan *modelling* dengan berusaha untuk meningkatkan *`accuracy`* model. Namun, dari hasil screening awal ternyata proporsi datanya tidak setara. Hal ini akan menjadi masalah nantinya saat pembuatan model. Dengan model ini, diharapkan bank bisa meringankan kerja tim analisis resiko dalam proses screening dan bisa mengarahkan energi yang tersisa ke pekerjaan lain yang memang butuh seorang manusia untuk melakukannya.
 
@@ -237,11 +207,8 @@ Untuk modelling, akan digunakan metode Logistic Regression. Dasar pemilihan meto
 
 ### Model Evaluation Conclusion
 
----
-
----
-
 Untuk melakukan evaluasi model ini, saya menggunakan hasil dari prediksi test dan trainnya, di mana saya fokus pada nilai **recall**  model, yang merupakan penilaian mengenai semua prediksi benar dari kelas yang bersangkutan. Berikut adalah hasil evaluasi untuk setiap recall nya:
+
 
 `1`
 * Nilai recall 0.68 di training, dan 0.68 di test (BEST FIT)
@@ -304,4 +271,4 @@ Setelah dibuatkan ranking tersebut, bisa digunakan untuk modeling, atau bisa jug
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/alsellodm/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/kaggle.jpg
