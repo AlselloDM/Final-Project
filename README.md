@@ -160,6 +160,7 @@ Sampai akhirnya berikut adalah data-data yang dipilih:
 | loan_status				| Target Prediksi
 
 Pemilihan data berdasarkan dari pengetahuan saya mengenai analisa kredit. Dapat dilihat dari uraian diatas bahwa saya hanya memilih kolom-kolom yang sekiranya memang menggambarkan analisa kreditnya. Beberapa kolom seperti address, grade atau apapun yang sekiranya dapat memberi unsur diskriminasi hanya dipakai untuk keperluan eksplorasi datanya saja. Kalaupun nantinya tidak digunakan dalam model, nanti akan dibuang.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Exploratory Data Analysis
@@ -199,13 +200,13 @@ Untuk modelling, akan digunakan metode Logistic Regression. Dasar pemilihan meto
 <br />
 <div align="center">
   <a href="https://github.com/AlselloDM/Final-Project">
-    <img src="images/logreg_train.png" alt="Train" width="80" height="80">
+    <img src="images/logreg_train.png" alt="Train" width="800" height="800">
   </a>
 
 <br />
 <div align="center">
   <a href="https://github.com/AlselloDM/Final-Project">
-    <img src="images/logreg_test.png" alt="Test" width="80" height="80">
+    <img src="images/logreg_test.png" alt="Test" width="800" height="800">
   </a>
 
 classification report Logistic Regression Train Set
